@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>錄音測試</title>
+    <style>
+        .controls{
+            display: inline-block;
+        }
+    </style>
+   
+</head>
+<body onload="alert('test')">
+    <h1>錄音測試</h1>
+    <div id ="controls">
+        <button id="recordButton">請開始說話</button>
+        <button id="pauseButton" disabled>停止錄音</button>
+        <button id="stopButton" disabled>產出錄音檔(stop)</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+        <ol id="recordingsList"></ol>
+
+
+        <script type = "text/javascript" src="http://127.0.0.1:5500/recoder.js"></script>
+        <script type = "text/javascript" src="http://127.0.0.1:5500/app.js"></script>
+    
+
+    <!-- 錄音播放的設計圖檔 -->
+    <!-- <audio controls src="blob:https://addpipe.com/b4cded1b-7d93-4135-8ffa-023469228ba9"></audio> -->
+    
+</body>
+</html>
